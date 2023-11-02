@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app5Angular';
+export class AppComponent { 
+  mensaje='';
+
+  actualizar(t: number) {
+    this.mensaje = t + '(se actualiza cada 10 segundos)';
+  }
 }
